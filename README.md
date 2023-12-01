@@ -1,10 +1,11 @@
 # ParallelObjectRecog
 Parallel object recognition using ray
-Abstract:
+**Abstract:**
 The rapid growth in image data and the increasing complexity of computer vision tasks have posed significant challenges to real-time image analysis. Object recognition is a fundamental task in computer vision with a wide range of applications, from traffic monitoring systems to autonomous robotics. The increasing complexity of image data and the demand for real-time processing have driven the need for efficient and scalable solutions. Parallel computing has emerged as a powerful solution to address these challenges by leveraging multi-core processors and distributed architectures. In this research paper, we present a novel approach that harnesses the capabilities of the Ray framework for parallel object recognition, thereby achieving high-speed and efficient processing. This project presents an innovative approach to accelerate real time object recognition applications through the integration of deep learning-based object recognition techniques. Leveraging the Ray framework in Python, this research addresses the critical need for real-time monitoring systems and classification in various intelligent transportation systems. The key components of the project include object recognition using Single Shot Detectors (SSDs) module that is trained on coco dataset, parallelization with the Ray Framework and open cv library. The amalgamation of SSD-based object recognition and parallel processing through Ray results in a robust and efficient object recognition system. This project demonstrates the feasibility of deploying parallel deep learning techniques for real-time object recognition. This project presents a parallel processing pipeline using the Ray framework in Python for efficient object recognition. The goal is to accelerate the analysis of large-scale images by concurrently applying object recognition techniques. By harnessing the power of Python, Ray, and SSD, this work provides a foundation for the development of intelligent object recognition systems that can enhance real time computer vision tasks.
-Keywords:
+**Keywords:**
 object recognition, parallel image processing, python, Ray,SSD,opencv .
-introduction:
+
+**Introduction:**
 In the world of computer vision, the demand for efficient and real-time object recognition has become increasingly vital. Addressing this imperative, our research endeavors to propel the field forward by introducing a groundbreaking methodology - parallel object recognition utilizing the Single Shot Detector (SSD) algorithm, coupled with the powerful capabilities of OpenCV and the Ray Python framework. This convergence of cutting-edge technologies aims to revolutionize the speed and efficiency of object recognition tasks, laying the groundwork for a paradigm shift in computer vision applications.
 The Single Shot Detector, known for its speed and accuracy, stands as the linchpin of our approach. Unlike traditional methods, SSD operates by conducting object detection in a single forward pass of the neural network, allowing for swift and real-time processing of images. This efficiency is paramount in addressing the escalating complexities associated with contemporary computer vision tasks.
 Complementing SSD, OpenCV serves as a robust computer vision library, providing a suite of tools and functions that enhance the recognition and processing of objects in images. The integration of OpenCV into our methodology enriches the object recognition pipeline, ensuring a comprehensive and reliable approach.
@@ -13,12 +14,12 @@ As we delve into the nuances of parallel object recognition using SSD, OpenCV, a
 Through this innovative fusion of state-of-the-art technologies, our work aims to set a new standard for real-time object recognition, pushing the boundaries of what is achievable in the dynamic landscape of computer vision.
 
 
-Data set:
+**Data set:**
 The COCO (Common Objects in Context) dataset is a widely used benchmark dataset in the field of computer vision, specifically for tasks related to object detection, segmentation, and captioning. Developed by Microsoft, the dataset is designed to address the complexities of real-world scenes, offering a diverse and challenging collection of images.
 COCO contains images collected from a wide range of sources, encompassing various scenes, objects, and scenarios. This diversity makes it suitable for training models that need to generalize well to different real-world conditions.The dataset is annotated with object instance segmentation masks and bounding boxes for 80 different object categories, including people, animals, vehicles, and everyday objects. This makes COCO a comprehensive resource for training models to recognize and delineate a broad spectrum of objects.
 Link : https://cocodataset.org
 
-Implementation:
+**Implementation:**
 Implementing parallel object recognition using Ray Python framework involves several key steps to harness the combined power of these technologies.
 Firstly, the foundation is laid by setting up the environment. Install the necessary libraries and dependencies, including OpenCV for image processing, the Ray framework for parallel computing, and any additional components required for SSD. Ensure compatibility and version consistency to avoid potential conflicts.
 Next, preprocess the dataset. Prepare the training data by loading images and annotating objects with bounding boxes. This step is crucial for training the SSD model to recognize objects accurately. OpenCV provides a suite of tools for image manipulation and annotation, simplifying this preprocessing stage. And also use coco dataset, specifically for tasks related to object detection. 
